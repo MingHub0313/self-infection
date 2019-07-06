@@ -391,6 +391,21 @@
         </dependency>
     </dependencies>
 
+    <dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>com.zmm</groupId>
+            <artifactId>framework-Sys-Facade</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.zmm</groupId>
+            <artifactId>framework-Biz-Facade</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+
     <build>
         <finalName>${project.name}</finalName>
         <resources>
