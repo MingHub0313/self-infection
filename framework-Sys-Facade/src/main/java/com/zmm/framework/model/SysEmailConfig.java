@@ -14,11 +14,13 @@ import top.ibase4j.core.base.BaseModel;
 public class SysEmailConfig extends BaseModel {
 
 	/**
-	 * SMTP服务器
+	 * SMT服务器
+	 * todo smtp_host--->smt_host
 	 */
 	@TableField(value = "smt_host")
 	private String smtHost;
-	/** SMTP服务器端口
+	/** SMT服务器端口
+	 * todo smtp_port --->smt_port
 	 */
 	@TableField(value = "smt_port")
 	private String smtPort;

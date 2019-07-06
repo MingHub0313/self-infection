@@ -1,6 +1,7 @@
 package com.zmm.framework.model;
 
 import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableName;
 import top.ibase4j.core.base.BaseModel;
 
 /**
@@ -8,6 +9,7 @@ import top.ibase4j.core.base.BaseModel;
  * @Author 900045
  * @Created by 2019/7/5 0005
  */
+@TableName("sys_user_menu")
 public class SysUserMenu extends BaseModel {
 
 	private Long userId;

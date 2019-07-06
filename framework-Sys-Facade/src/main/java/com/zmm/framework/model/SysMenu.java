@@ -27,8 +27,8 @@ public class SysMenu extends BaseModel {
 	private String menuType;
 	private Long parentId;
 
-	@TableField("iconcls_")
-	private String iconcls;
+	@TableField("icon_cls_")
+	private String iconCls;
 
 	@TableField("request_")
 	private String request;
@@ -99,18 +99,19 @@ public class SysMenu extends BaseModel {
 	}
 
 	/**
-	 * @return the value of sys_menu.iconcls_
+	 * @return the value of sys_menu.iconCls_
 	 */
-	public String getIconcls() {
-		return iconcls;
+
+	public String getIconCls() {
+		return iconCls;
 	}
 
 	/**
-	 * @param iconcls
-	 *            the value for sys_menu.iconcls_
+	 * @param iconCls
+	 *            the value for sys_menu.iconCls_
 	 */
-	public void setIconcls(String iconcls) {
-		this.iconcls = iconcls == null ? null : iconcls.trim();
+	public void setIconCls(String iconCls) {
+		this.iconCls = iconCls == null ? null : iconCls.trim();
 	}
 
 	/**
@@ -247,7 +248,7 @@ public class SysMenu extends BaseModel {
 		sb.append(", menuName=").append(menuName);
 		sb.append(", menuType=").append(menuType);
 		sb.append(", parentId=").append(parentId);
-		sb.append(", iconcls=").append(iconcls);
+		sb.append(", iconCls=").append(iconCls);
 		sb.append(", request=").append(request);
 		sb.append(", expand=").append(expand);
 		sb.append(", sortNo=").append(sortNo);
@@ -278,8 +279,8 @@ public class SysMenu extends BaseModel {
 				: this.getMenuType().equals(other.getMenuType()))
 				&& (this.getParentId() == null ? other.getParentId() == null
 				: this.getParentId().equals(other.getParentId()))
-				&& (this.getIconcls() == null ? other.getIconcls() == null
-				: this.getIconcls().equals(other.getIconcls()))
+				&& (this.getIconCls() == null ? other.getIconCls() == null
+				: this.getIconCls().equals(other.getIconCls()))
 				&& (this.getRequest() == null ? other.getRequest() == null
 				: this.getRequest().equals(other.getRequest()))
 				&& (this.getExpand() == null ? other.getExpand() == null : this.getExpand().equals(other.getExpand()))
@@ -309,7 +310,7 @@ public class SysMenu extends BaseModel {
 		result = prime * result + (getMenuName() == null ? 0 : getMenuName().hashCode());
 		result = prime * result + (getMenuType() == null ? 0 : getMenuType().hashCode());
 		result = prime * result + (getParentId() == null ? 0 : getParentId().hashCode());
-		result = prime * result + (getIconcls() == null ? 0 : getIconcls().hashCode());
+		result = prime * result + (getIconCls() == null ? 0 : getIconCls().hashCode());
 		result = prime * result + (getRequest() == null ? 0 : getRequest().hashCode());
 		result = prime * result + (getExpand() == null ? 0 : getExpand().hashCode());
 		result = prime * result + (getSortNo() == null ? 0 : getSortNo().hashCode());

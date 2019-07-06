@@ -35,7 +35,7 @@ public interface MemberService extends BaseService<TmEmber> {
 	 * @param map
 	 * @return
 	 */
-	Object updataphone(Map<String, Object> map);
+	Object updatePhone(Map<String, Object> map);
 
 
 	/**

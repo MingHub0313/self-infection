@@ -51,9 +51,10 @@ public class SysMsgConfig extends BaseModel {
 	private Integer sendGoodsIsSend;
 	/**
 	 * 用户注册时是否给客户发短信
+	 * todo regist_is_send-->registerIsSend
 	 */
-	@TableField("regist_is_send")
-	private Integer registIsSend;
+	@TableField("register _is_send")
+	private Integer registerIsSend;
 	/**
 	 * 用户付款后是否给客户发收货验证码
 	 */
@@ -117,12 +118,12 @@ public class SysMsgConfig extends BaseModel {
 		this.sendGoodsIsSend = sendGoodsIsSend;
 	}
 
-	public Integer getRegistIsSend() {
-		return registIsSend;
+	public Integer getRegisterIsSend() {
+		return registerIsSend;
 	}
 
-	public void setRegistIsSend(Integer registIsSend) {
-		this.registIsSend = registIsSend;
+	public void setRegisterIsSend(Integer registerIsSend) {
+		this.registerIsSend = registerIsSend;
 	}
 
 	public Integer getAdviceGoodsIsSend() {

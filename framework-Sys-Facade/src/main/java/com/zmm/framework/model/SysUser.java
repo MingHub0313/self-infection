@@ -1,6 +1,7 @@
 package com.zmm.framework.model;
 
 import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableName;
 import top.ibase4j.core.base.BaseModel;
 
 import java.util.Date;
@@ -11,6 +12,7 @@ import java.util.Date;
  * @Author 900045
  * @Created by 2019/7/5 0005
  */
+@TableName("sys_user")
 public class SysUser extends BaseModel {
 	/**
 	 * 登陆帐户

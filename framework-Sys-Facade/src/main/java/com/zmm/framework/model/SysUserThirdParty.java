@@ -3,7 +3,7 @@ package com.zmm.framework.model;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import top.ibase4j.core.base.BaseModel;
-
+//todo  --->表的 名称
 /**
  * @Name SysUserThirdParty
  * @Author 900045
